@@ -1,0 +1,42 @@
+# Environment & Secret Configurations
+.env
+.env.*
+!.env.example
+
+# Local Utility Scripts containing credentials
+generate_password.php
+setup.php
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+
+# Backup Files
+*.bak
+*.backup
+*.old
+
+# Database Dumps & Exports
+*.sql
+*.sqlite
+*.sqlite3
+
+# Local Cache
+.cache/
