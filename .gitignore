@@ -6,6 +6,8 @@
 # Local Utility Scripts containing credentials
 generate_password.php
 setup.php
+tools/generate_password.php
+tools/setup.php
 
 # Operating System Files
 .DS_Store

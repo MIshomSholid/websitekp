@@ -1,19 +1,5 @@
 <?php
-$host = '127.0.0.1';
-$port = '3306';
-$dbname = 'toko_hongkong';
-$username = 'root';
-$password = '';
+// config.php - Database Configuration Bridge for Backward Compatibility
+require_once __DIR__ . '/app/config/Database.php';
 
-try {
-    $pdo = new PDO(
-        "mysql:host=$host;port=$port;dbname=$dbname",
-        $username,
-        $password
-    );
-
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
-}
-?>
+$pdo = Database::getConnection();
